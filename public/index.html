@@ -24,7 +24,9 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Blog de Noticias</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +41,17 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("myOverlay").style.display = "block";
+      }
+       
+      function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("myOverlay").style.display = "none";
+      }
+      </script>
   </body>
 </html>
